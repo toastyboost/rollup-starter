@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "declaration": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["styled-components", "react", "react-dom", "jest", "storybook__react"]
+  },
+  "exclude": ["./node_modules", "./public", "./typings", "./dist"]
+}
