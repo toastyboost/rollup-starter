@@ -1,1 +1,1 @@
-export { Test } from 'components'
+export * from 'components'

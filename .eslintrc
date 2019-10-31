@@ -17,6 +17,7 @@
     "arrow-body-style": "off",
     "react/prop-types": "off",
     "react/jsx-props-no-spreading": "off",
+    "react/jsx-one-expression-per-line": "off",
     "jsx-a11y/no-static-element-interactions": "off",
     "jsx-a11y/click-events-have-key-events": "off",
     "implicit-arrow-linebreak": "off",
