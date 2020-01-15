@@ -1,6 +1,6 @@
 {
   "name": "rollup-boilerplate",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "./dist/index",
   "license": "MIT",
   "files": [
@@ -11,26 +11,25 @@
     "react-dom": "^16.9.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
-    "@babel/preset-react": "^7.6.3",
-    "babel-eslint": "^10.0.3",
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
     "eslint": "^6.6.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
+    "prettier": "^1.19.1",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.11.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "typescript": "^3.7.4"
   },
   "scripts": {
     "build": "rollup -c",
-    "start": "start-storybook",
-    "dev": "rollup -c -w"
+    "lint": "eslint --ext .ts,.tsx src"
   },
   "dependencies": {
     "@rollup/plugin-alias": "^2.2.0",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
     "rollup": "^1.26.2",
     "rollup-plugin-babel": "^4.2.0",
     "rollup-plugin-cleaner": "^1.0.0",

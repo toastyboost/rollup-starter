@@ -1,52 +1,51 @@
-import resolve from 'rollup-plugin-node-resolve'
-import commonjs from 'rollup-plugin-commonjs'
-import babel from 'rollup-plugin-babel'
-import cleaner from 'rollup-plugin-cleaner'
-import alias from '@rollup/plugin-alias'
+import resolve from 'rollup-plugin-node-resolve';
+import commonjs from 'rollup-plugin-commonjs';
 
-import { eslint } from 'rollup-plugin-eslint'
-import { terser } from 'rollup-plugin-terser'
+import cleaner from 'rollup-plugin-cleaner';
+import alias from '@rollup/plugin-alias';
+import typescript from 'rollup-plugin-typescript2';
 
-import pkg from './package.json'
+import { eslint } from 'rollup-plugin-eslint';
+import { terser } from 'rollup-plugin-terser';
 
-const production = !process.env.ROLLUP_WATCH
+import pkg from './package.json';
+
+const availibleFiles = ['.ts', '.tsx', '.json'];
 
 export default {
-  input: 'src/index.js',
+  input: 'src/index.ts',
   output: [
     {
       file: 'dist/common.js',
       format: 'cjs',
-      sourcemap: true
+      sourcemap: true,
     },
     {
       file: 'dist/index.js',
       format: 'esm',
-      sourcemap: true
-    }
+      sourcemap: true,
+    },
   ],
   external: [
     ...Object.keys(pkg.dependencies || {}),
-    ...Object.keys(pkg.peerDependencies || {})
+    ...Object.keys(pkg.peerDependencies || {}),
   ],
   plugins: [
     cleaner({
-      targets: ['dist']
+      targets: ['dist'],
     }),
     alias({
       entries: {
-        components: './components'
+        components: './components',
       },
-      resolve: ['.jsx', '.js']
+      resolve: availibleFiles,
     }),
     eslint(),
-    babel({
-      exclude: ['node_modules/**']
-    }),
+    typescript({ rollupCommonJSResolveHack: true, clean: true }),
     resolve({
-      extensions: ['.js', '.jsx', '.json']
+      extensions: availibleFiles,
     }),
     commonjs(),
-    production && terser()
-  ]
-}
+    terser(),
+  ],
+};
