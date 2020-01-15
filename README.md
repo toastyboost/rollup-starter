@@ -5,14 +5,14 @@ Clean and powerfull. Good to fork in your project, learning and development.
 
 It's just work.
 
-# Rollup features
+## Rollup features
 
 ✅ Bundles CJS and ES module formats  
 ✅ Compression by Terser  
 ✅ Aliases  
 ✅ Sourcemaps
 
-# Boilerplate features
+## Boilerplate features
 
 ✅ ESLint plugins: Recommended, Typescript Recommended, React, Requiring Types  
 ✅ Prettier  
