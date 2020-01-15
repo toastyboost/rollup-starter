@@ -14,7 +14,6 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.6.3",
-    "@rollup/plugin-alias": "^2.2.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.0.1",
@@ -31,6 +30,7 @@
     "dev": "rollup -c -w"
   },
   "dependencies": {
+    "@rollup/plugin-alias": "^2.2.0",
     "rollup": "^1.26.2",
     "rollup-plugin-babel": "^4.2.0",
     "rollup-plugin-cleaner": "^1.0.0",
