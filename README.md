@@ -1,4 +1,4 @@
-# 🐣 Rollup boilerplate for React with Typescript
+# 🐣 Rollup boilerplate (React, Typescript)
 
 Boilerplate for development and publishing modern React NPM packages or UI-kit modules with Rollup and Typescript.  
 Clean and powerfull. Good to fork in your project, learning and development.
