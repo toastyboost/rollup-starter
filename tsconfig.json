@@ -2,7 +2,6 @@
   "compilerOptions": {
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "./src",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
@@ -12,14 +11,16 @@
     "moduleResolution": "node",
     "noEmit": true,
     "resolveJsonModule": true,
-    "rootDir": "./src",
-    "outDir": "./dist",
     "skipLibCheck": true,
     "strict": true,
     "target": "es6",
-    "typeRoots": ["./node_modules/@types"],
-    "types": []
+    "declaration": true,
+    "declarationDir": "./dist",
+    "baseUrl": "./",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "typeRoots": ["./node_modules/@types"]
   },
   "exclude": ["./node_modules", "./dist"],
-  "include": ["src"]
+  "include": ["./src"]
 }

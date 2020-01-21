@@ -13,7 +13,7 @@ import pkg from './package.json';
 const availibleFiles = ['.ts', '.tsx', '.json'];
 
 export default {
-  input: 'src/index.ts',
+  input: 'src',
   output: [
     {
       file: 'dist/common.js',

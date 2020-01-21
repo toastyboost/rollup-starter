@@ -15,7 +15,7 @@
   "parserOptions": {
     "project": "tsconfig.json",
     "createDefaultProgram": true,
-    "tsconfigRootDir": "."
+    "tsconfigRootDir": "./"
   },
   "plugins": ["react", "@typescript-eslint"],
   "settings": {
@@ -27,6 +27,7 @@
     "import/extensions": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "react/display-name": "off"
   }
 }

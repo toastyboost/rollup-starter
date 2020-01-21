@@ -1,6 +1,6 @@
-# 🐣 Rollup boilerplate (React, Typescript)
+# 🐣 Rollup starter (React, Typescript)
 
-Boilerplate for development and publishing modern React NPM packages or UI-kit modules with Rollup and Typescript.  
+Development and publishing modern React NPM packages or UI-kit modules with Rollup and Typescript.  
 Clean and powerfull. Good to fork in your project, learning and development.
 
 It's just work.
@@ -10,21 +10,18 @@ It's just work.
 `yarn build` builds the application to `dist/`  
 `yarn lint` check for errors `src/**.ts`
 
-## Rollup features
+## Features
 
-✅ Bundles CJS and ES module formats  
-✅ Compression by Terser  
-✅ Aliases  
-✅ Sourcemaps
-
-## Boilerplate features
-
-✅ ESLint plugins: Recommended, Typescript Recommended, React, Requiring Types  
-✅ Prettier  
-✅ No TSLint because he's dead
+- [x] Bundles CJS and ES module formats
+- [x] Compression by Terser
+- [x] Aliases
+- [x] Sourcemaps
+- [x] ESLint plugins: Recommended, Typescript Recommended, React, Requiring Types
+- [x] Prettier
+- [x] No TSLint (because he's dead)
+- [x] Compiling types
 
 ## TODO
 
-- [ ] Add publishing features
 - [ ] Add Badges: CI
-- [ ] Add integration with Storybook-boilerplate
+- [ ] Add article how to publish NPM package
