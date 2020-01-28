@@ -3,6 +3,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import alias from '@rollup/plugin-alias';
 import strip from '@rollup/plugin-strip';
 
+import babel from 'rollup-plugin-babel';
 import typescript from 'rollup-plugin-typescript2';
 
 import { eslint } from 'rollup-plugin-eslint';
@@ -10,7 +11,7 @@ import { terser } from 'rollup-plugin-terser';
 
 import pkg from './package.json';
 
-const availibleFiles = ['.ts', '.tsx', '.json'];
+const extensions = ['.ts', '.tsx', '.json'];
 
 export default {
   input: 'src',
@@ -35,12 +36,16 @@ export default {
       entries: {
         '~': './src',
       },
-      resolve: availibleFiles,
+      resolve: extensions,
     }),
     eslint(),
     typescript({ rollupCommonJSResolveHack: true, clean: true }),
+    babel({
+      extensions,
+      exclude: 'node_modules/**',
+    }),
     resolve({
-      extensions: availibleFiles,
+      extensions,
     }),
     strip(),
     commonjs(),
