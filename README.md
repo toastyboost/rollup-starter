@@ -1,6 +1,6 @@
 # 🐣 Rollup starter with Typescript
 
-Build your module into a clean, typed and cross-platform package.
+Build your module into a clean, typed and cross-platform package.  
 It's just works.
 
 ## Usage
