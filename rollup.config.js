@@ -1,8 +1,8 @@
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
-
-import cleaner from 'rollup-plugin-cleaner';
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
 import alias from '@rollup/plugin-alias';
+import strip from '@rollup/plugin-strip';
+
 import typescript from 'rollup-plugin-typescript2';
 
 import { eslint } from 'rollup-plugin-eslint';
@@ -31,12 +31,9 @@ export default {
     ...Object.keys(pkg.peerDependencies || {}),
   ],
   plugins: [
-    cleaner({
-      targets: ['dist'],
-    }),
     alias({
       entries: {
-        components: './components',
+        '~': './src',
       },
       resolve: availibleFiles,
     }),
@@ -45,6 +42,7 @@ export default {
     resolve({
       extensions: availibleFiles,
     }),
+    strip(),
     commonjs(),
     terser(),
   ],

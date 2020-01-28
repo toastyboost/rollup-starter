@@ -1,9 +1,7 @@
-# 🐣 Rollup starter (React, Typescript)
+# 🐣 Rollup starter with Typescript
 
-Development and publishing modern React NPM packages or UI-kit modules with Rollup and Typescript.  
-Clean and powerfull. Good to fork in your project, learning and development.
-
-It's just work.
+Build your module into a clean, typed and cross-platform package.
+It's just works.
 
 ## Usage
 
@@ -12,7 +10,7 @@ It's just work.
 
 ## Features
 
-- [x] Bundles CJS and ES module formats
+- [x] Bundles CJS/ES module formats
 - [x] Compression by Terser
 - [x] Aliases
 - [x] Sourcemaps
@@ -20,8 +18,10 @@ It's just work.
 - [x] Prettier
 - [x] No TSLint (because he's dead)
 - [x] Compiling types
+- [x] Remove console.log's from bundle with @rollup/strip
 
 ## TODO
 
+- [ ] Add CI
 - [ ] Add Badges: CI
 - [ ] Add article how to publish NPM package
