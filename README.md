@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/toastyboost/rollup-starter.svg?branch=master)](https://travis-ci.org/toastyboost/rollup-starter)
 
 Build your module into a clean, typed and cross-platform package.  
-It's just works.
+It's just works. Only key featurs.
 
 ## Usage
 
