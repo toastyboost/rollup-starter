@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/toastyboost/rollup-starter.svg?branch=master)](https://travis-ci.org/toastyboost/rollup-starter)
 
-Build your module into a clean, typed and cross-platform package.  
+Build your library or utility into a clean, typed and cross-platform package.  
 It's just works. Only key featurs. Updates every month.
 
 React version — 🐣[Rollup React starter with Typescript](https://github.com/toastyboost/rollup-react-starter)
