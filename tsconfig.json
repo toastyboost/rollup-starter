@@ -6,7 +6,11 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "react",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -19,8 +23,20 @@
     "baseUrl": "./",
     "rootDir": "./src",
     "outDir": "./dist",
-    "typeRoots": ["./node_modules/@types"]
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "paths": {
+      "~/": [
+        "src/"
+      ]
+    },
   },
-  "exclude": ["./node_modules", "./dist"],
-  "include": ["./src"]
+  "exclude": [
+    "./node_modules",
+    "./dist"
+  ],
+  "include": [
+    "src"
+  ]
 }

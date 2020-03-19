@@ -1,7 +1,6 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import alias from '@rollup/plugin-alias';
-import strip from '@rollup/plugin-strip';
 
 import babel from 'rollup-plugin-babel';
 import typescript from 'rollup-plugin-typescript2';
@@ -47,7 +46,6 @@ export default {
     resolve({
       extensions,
     }),
-    strip(),
     commonjs(),
     terser(),
   ],

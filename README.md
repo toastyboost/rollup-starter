@@ -3,25 +3,31 @@
 [![Build Status](https://travis-ci.org/toastyboost/rollup-starter.svg?branch=master)](https://travis-ci.org/toastyboost/rollup-starter)
 
 Build your module into a clean, typed and cross-platform package.  
-It's just works. Only key featurs.
+It's just works. Only key featurs. Updates every month.
 
 React version — 🐣[Rollup React starter with Typescript](https://github.com/toastyboost/rollup-react-starter)
 
 ## Usage
 
-`yarn build` builds the application to `dist/`  
-`yarn lint` check for errors `src/**.ts`
+`yarn build` — builds application to `dist/`  
+`yarn lint` — lint in `src/**.ts`
+`yarn publish` — build, then publish to NPM
 
 ## Features
 
-- [x] 🧠Bundles CJS/ES module formats
-- [x] 👭Aliases
-- [x] 🤫Sourcemaps
-- [x] 👮‍♀️ESLint plugins (not TSLint, because it's dead)
-- [x] 🍭Prettier
-- [x] 🎱 Auto compiling types
-- [x] 🧹 Post clean
+- [x] Bundles CJS/ES module formats
+- [x] ESLint plugins (not TSLint, because it's dead)
+- [x] Prettier
+- [x] Aliases
+- [x] Sourcemaps
+- [x] Autocompiling types
+- [x] Post clean and compression
 
 ## TODO
 
-- [ ] Add article how to publish NPM package
+- [ ] Test alises
+- [ ] Add todo
+
+## License
+
+Released under the MIT © [Dmitry D.](https://github.com/toastyboost)

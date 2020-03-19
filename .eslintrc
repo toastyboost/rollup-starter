@@ -1,8 +1,9 @@
 {
   "env": {
+    "node": true,
     "browser": true,
+    "commonjs": true,
     "es6": true,
-    "es2017": true
   },
   "extends": [
     "eslint:recommended",
@@ -16,7 +17,9 @@
     "createDefaultProgram": true,
     "tsconfigRootDir": "./"
   },
-  "plugins": ["@typescript-eslint"],
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "rules": {
     "import/extensions": "off",
     "@typescript-eslint/explicit-function-return-type": "off"
