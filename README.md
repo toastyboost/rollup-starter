@@ -10,7 +10,7 @@ React version — 🐣[Rollup React starter with Typescript](https://github.com/
 ## Usage
 
 `yarn build` — builds application to `dist/`  
-`yarn lint` — lint in `src/**.ts`
+`yarn lint` — lint in `src/**.ts`  
 `yarn publish` — build, then publish to NPM
 
 ## Features
