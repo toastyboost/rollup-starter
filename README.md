@@ -1,4 +1,4 @@
-# 🐣 Rollup starter with Typescript
+# 🐣 Rollup library starter with Typescript
 
 [![Build Status](https://travis-ci.org/toastyboost/rollup-starter.svg?branch=master)](https://travis-ci.org/toastyboost/rollup-starter)
 

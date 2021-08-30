@@ -8,6 +8,7 @@ node_modules
 # npm package lock
 package-lock.json
 yarn.lock
+yarn-error.log
 
 # project files
 src
