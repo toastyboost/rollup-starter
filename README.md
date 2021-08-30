@@ -1,6 +1,6 @@
 # 🐣 Rollup starter with Typescript
 
-[![Build Status](https://travis-ci.org/toastyboost/rollup-starter.svg?branch=master)](https://travis-ci.org/toastyboost/rollup-starter)  
+[![Build Status](https://travis-ci.org/toastyboost/rollup-starter.svg?branch=master)](https://travis-ci.org/toastyboost/rollup-starter)
 
 Build your library or utility into a clean, typed and cross-platform package.  
 It's just works. Only key featurs. Updates every month.
@@ -26,7 +26,6 @@ React version — 🐣[Rollup React starter with Typescript](https://github.com/
 ## TODO
 
 - [ ] Test alises
-- [ ] Add todo
 
 ## License
 

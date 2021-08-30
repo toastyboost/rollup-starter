@@ -1,13 +1,10 @@
 type ComponentProps = {
   text: string;
-  object: {
-    a: string;
-    b: string;
-  };
+  object: Record<string, string>;
 };
 
 export function Component({ text, object }: ComponentProps): string {
   const arr = { ...object, c: '3', d: '4' };
 
-  return `${text} + ${text} ${arr}`;
+  return `${text} + ${text} ${JSON.stringify(arr)}`;
 }
